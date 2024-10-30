@@ -4,9 +4,10 @@ dependencies:
   dep_id: dep_lin1x4oec0ytd
   resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme, package_name: m3}
   version: {version_tag: v1.1.3}
-name: M3 App 1
+metadata: {description: Plant - Lilyana's Collection, title: PlantLily}
+name: PlantLily
 native_deps: null
-package_name: M3_App_1
+package_name: PlantLily
 runtime_options:
   client_version: '3'
   server_spec: {base: python310-minimal}
@@ -16,3 +17,5 @@ services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
+startup: {module: MainLayout, type: form}
+startup_form: null
