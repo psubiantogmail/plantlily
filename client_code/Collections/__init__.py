@@ -3,10 +3,11 @@ from anvil import *
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from .. import AppModule
 
 
 class Collections(CollectionsTemplate):
-    def __init__(self, page='collections', selected_item=None **properties):
+    def __init__(self, page='collections', selected_item=None, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
         self.page=page
