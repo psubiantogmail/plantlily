@@ -10,8 +10,8 @@ class MainLayout(MainLayoutTemplate):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
-
-        self.navigation_link_plants.selected = False
+        
+        self.navigation_link_indoor.selected = False
         self.navigation_link_data.selected = False
         self.navigation_link_data.visible = False
 

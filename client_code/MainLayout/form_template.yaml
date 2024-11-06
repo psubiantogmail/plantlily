@@ -46,8 +46,12 @@ components_by_slot:
     properties: {align: center, text: 🪴 Plant & Lily}
     type: form:dep_lin1x4oec0ytd:_Components.Heading
   - layout_properties: {}
-    name: navigation_link_plants
-    properties: {icon: 'mi:potted_plant', selected: false, text: Plants}
+    name: navigation_link_indoor
+    properties: {icon: 'mi:potted_plant', selected: false, text: Indoor}
+    type: form:dep_lin1x4oec0ytd:_Components.NavigationLink
+  - layout_properties: {}
+    name: navigation_link_outdoor
+    properties: {icon: 'mi:door_open', text: Outdoor}
     type: form:dep_lin1x4oec0ytd:_Components.NavigationLink
   - layout_properties: {}
     name: navigation_link_data

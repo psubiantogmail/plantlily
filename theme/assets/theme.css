@@ -1,0 +1,9 @@
+.anvil-role-fixed-width-card {
+  width: 300px;
+}
+
+@media (min-width: 992px) {
+  .anvil-role-max-width-panel .anvil-panel-section-container {
+      max-width: 1040px;
+  }
+}

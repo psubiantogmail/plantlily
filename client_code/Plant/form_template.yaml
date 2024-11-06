@@ -1,0 +1,25 @@
+components:
+- components:
+  - data_bindings:
+    - {code: 'self.item[''img'']', property: source, writeback: false}
+    layout_properties: {slot: card-content-slot}
+    name: image_plant
+    properties:
+      display_mode: zoom_to_fill
+      margin: ['0', null, '0', null]
+      source: self.item['img']
+      spacing_above: none
+      spacing_below: none
+    type: Image
+  - components: []
+    layout_properties: {slot: card-content-slot}
+    name: card_content_container_plant
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+  data_bindings: []
+  layout_properties: {grid_position: 'YRMCFW,XAGQUY'}
+  name: interactive_card_plant
+  properties: {role: ''}
+  type: form:dep_lin1x4oec0ytd:_Components.InteractiveCard
+container: {type: ColumnPanel}
+is_package: true
