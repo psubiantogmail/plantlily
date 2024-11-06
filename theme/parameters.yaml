@@ -1,1 +1,4 @@
-roles: []
+roles:
+- {name: fixed-width-card}
+- components: [ColumnPanel]
+  name: max-width-panel

@@ -35,5 +35,5 @@ services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
-startup: {module: Collections, type: form}
+startup: {module: Home, type: form}
 startup_form: null

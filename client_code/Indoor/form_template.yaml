@@ -3,7 +3,7 @@ components_by_slot:
   - components:
     - layout_properties: {grid_position: 'UTZTDH,YBJOPF'}
       name: heading
-      properties: {scale: large, text: My Collections}
+      properties: {scale: large, text: Indoor Plants}
       type: form:dep_lin1x4oec0ytd:_Components.Heading
     - layout_properties: {grid_position: 'UTZTDH,LEDHWQ'}
       name: dropdown_menu_sort

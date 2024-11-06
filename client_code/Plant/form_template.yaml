@@ -11,7 +11,19 @@ components:
       spacing_above: none
       spacing_below: none
     type: Image
-  - components: []
+  - components:
+    - layout_properties: {slot: card-content-container-slot}
+      name: text_added
+      properties: {}
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - layout_properties: {slot: card-content-container-slot}
+      name: heading_name
+      properties: {bold: true}
+      type: form:dep_lin1x4oec0ytd:_Components.Heading
+    - layout_properties: {slot: card-content-container-slot}
+      name: text_description
+      properties: {}
+      type: form:dep_lin1x4oec0ytd:_Components.Text
     layout_properties: {slot: card-content-slot}
     name: card_content_container_plant
     properties: {}
@@ -19,7 +31,7 @@ components:
   data_bindings: []
   layout_properties: {grid_position: 'YRMCFW,XAGQUY'}
   name: interactive_card_plant
-  properties: {role: ''}
+  properties: {role: fixed-width-card}
   type: form:dep_lin1x4oec0ytd:_Components.InteractiveCard
 container: {type: ColumnPanel}
 is_package: true
