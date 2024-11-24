@@ -1,9 +1,16 @@
 from ._anvil_designer import MainLayoutTemplate
 from anvil import *
+import anvil.google.auth, anvil.google.drive
+from anvil.google.drive import app_files
+import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from .. import AppModule
+from .. import Home
+from .. import Indoor
+from .. import Outdoor
+from .. import Data
 
 
 class MainLayout(MainLayoutTemplate):
@@ -32,4 +39,16 @@ class MainLayout(MainLayoutTemplate):
             self.navigation_link_data.visible = False
             self.navigation_link_login.icon = 'mi:login'
             self.navigation_link_login.text = 'Login'
+
+    def link_home_click(self, **event_args):
+        open_form('Home')
+
+    def navigation_link_indoor_click(self, **event_args):
+        open_form('Indoor')
+
+    def navigation_link_outdoor_click(self, **event_args):
+        open_form('Outdoor')
+
+    def navigation_link_data_click(self, **event_args):
+        open_form('Data')
 
