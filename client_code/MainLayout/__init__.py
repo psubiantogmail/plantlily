@@ -24,18 +24,12 @@ class MainLayout(MainLayoutTemplate):
 
     def navigation_link_login_click(self, **event_args):
         if self.navigation_link_login.text == 'Login':
-            AppModule.user = {
-                'name': 'peter',
-                'security': 9
-            }
+            AppModule.user = anvil.users.login_with_form()
             self.navigation_link_data.visible = True
             self.navigation_link_login.icon = 'mi:logout'
             self.navigation_link_login.text = 'Logout'
         else:
-            AppModule.user = {
-                'name': '',
-                'security': 0
-            }
+            anvil.users.logout()
             self.navigation_link_data.visible = False
             self.navigation_link_login.icon = 'mi:login'
             self.navigation_link_login.text = 'Login'

@@ -11,8 +11,3 @@ from anvil.tables import app_tables
 #
 #    Module1.say_hello()
 #
-global user
-user = {
-    'name': '',
-    'security': 0
-}

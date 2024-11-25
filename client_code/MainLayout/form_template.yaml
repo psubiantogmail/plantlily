@@ -5,10 +5,14 @@ components_by_slot:
     properties: {}
     type: form:dep_lin1x4oec0ytd:_Components.Divider
   - layout_properties: {}
-    name: heading_1
-    properties: {text: 🪴Plant & Lily}
-    type: form:dep_lin1x4oec0ytd:_Components.Heading
+    name: divider_3
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Divider
   - components:
+    - layout_properties: {grid_position: 'NDQXJW,GNOYHV'}
+      name: heading_1
+      properties: {text: 🪴Plant & Lily}
+      type: form:dep_lin1x4oec0ytd:_Components.Heading
     - layout_properties: {grid_position: 'IJPRBT,NIDSDP HCTZRJ,QYYEUH'}
       name: About
       properties: {bold: true, style: title}
@@ -32,7 +36,7 @@ components_by_slot:
       name: link_affiliation_jw
       properties: {text: JW.org, url: 'https://jw.org/en'}
       type: form:dep_lin1x4oec0ytd:_Components.Link
-    - event_bindings: {click: link_affiliations_login_click}
+    - event_bindings: {}
       layout_properties: {grid_position: 'IJPRBT,BXRCCE SSQRAR,DNEKIL'}
       name: link_affiliations_login
       properties: {text: login, url: 'https://hub.jw.org/home/en'}
@@ -82,6 +86,6 @@ layout:
   type: form:dep_lin1x4oec0ytd:Layouts.NavigationRailLayout
 slots:
   content:
-    index: 0
+    index: 1
     set_layout_properties: {}
     target: {name: content, type: slot}
