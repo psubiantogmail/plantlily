@@ -45,4 +45,3 @@ class MainLayout(MainLayoutTemplate):
 
     def navigation_link_data_click(self, **event_args):
         open_form('Data')
-

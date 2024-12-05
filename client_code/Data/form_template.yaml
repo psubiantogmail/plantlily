@@ -5,7 +5,8 @@ components_by_slot:
     properties: {scale: large, text: Data}
     type: form:dep_lin1x4oec0ytd:_Components.Heading
   - components:
-    - layout_properties: {}
+    - data_bindings: []
+      layout_properties: {}
       name: repeating_panel
       properties: {item_template: Data.RowTemplate}
       type: RepeatingPanel
