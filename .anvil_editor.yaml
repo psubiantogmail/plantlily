@@ -14,4 +14,5 @@ unique_ids:
   modules:
     AppModule: '173059686093628229262530.071964'
   scripts: {}
-  server_modules: {}
+  server_modules:
+    ServerModule: '1733516590907827553181276.1754'
