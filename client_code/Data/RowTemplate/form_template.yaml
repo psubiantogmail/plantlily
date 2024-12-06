@@ -1,6 +1,46 @@
 components:
 - components: []
   layout_properties: {column: 'null'}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+- components:
+  - components:
+    - data_bindings:
+      - {code: 'self.item[''img'']', property: source, writeback: false}
+      layout_properties: {col_xs: 1, row: KUTQMS, width_xs: 3}
+      name: image_1
+      properties: {height: 175, horizontal_align: center, vertical_align: center}
+      type: Image
+    - components:
+      - data_bindings:
+        - {code: 'self.item[''name'']', property: text, writeback: false}
+        - {code: '''mi:potted_plant'' if self.item[''Type''][''Name''] == ''Indoor'' else ''mi:door_open''', property: icon, writeback: false}
+        layout_properties: {col_xs: 0, row: HZXKZW, width_xs: 4}
+        name: heading_1
+        properties: {icon_size: 30, style: headline}
+        type: form:dep_lin1x4oec0ytd:_Components.Heading
+      - data_bindings:
+        - {code: '''Acquired : '' + self.item[''added''].strftime("%m/%d/%Y")', property: text, writeback: false}
+        layout_properties: {col_xs: 6, row: HZXKZW, width_xs: 4}
+        name: heading_2
+        properties: {scale: small}
+        type: form:dep_lin1x4oec0ytd:_Components.Heading
+      - data_bindings:
+        - {code: 'self.item[''description'']', property: text, writeback: false}
+        layout_properties: {col_xs: 0, row: VLINTK, width_xs: 11}
+        name: text_1
+        properties: {style: body}
+        type: form:dep_lin1x4oec0ytd:_Components.Text
+      layout_properties: {col_xs: 3, row: KUTQMS, width_xs: 8}
+      name: grid_panel_2
+      properties: {}
+      type: GridPanel
+    layout_properties: {column: 'null'}
+    name: grid_panel_1
+    properties: {}
+    type: GridPanel
+  layout_properties: {column: 'null'}
   name: data_row_panel_1
   properties: {}
   type: DataRowPanel
