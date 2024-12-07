@@ -34,7 +34,7 @@ components:
   properties: {text: 'Plant type :'}
   type: form:dep_lin1x4oec0ytd:_Components.Text
 - data_bindings:
-  - {code: app_tables.type.search(), property: items, writeback: false}
+  - {code: '[r[''Name''] for r in self.types]', property: items, writeback: false}
   layout_properties: {grid_position: 'HZDCXN,WUMXIZ'}
   name: dropdown_menu_1
   properties: {}

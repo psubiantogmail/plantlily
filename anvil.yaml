@@ -17,18 +17,18 @@ db_schema:
       type: datetime
     - admin_ui: {order: 4, width: 200}
       name: Type
-      target: type
+      target: types
       type: link_single
     server: full
     title: plants
-  type:
+  types:
     client: search
     columns:
     - admin_ui: {order: 0, width: 200}
       name: Name
       type: string
     server: full
-    title: type
+    title: types
   users:
     client: none
     columns:
