@@ -18,4 +18,4 @@ class DataEdit(DataEditTemplate):
         self.init_components(**properties)
 
         # Any code you write here will run before the form opens.
-        self.types = app_tables.types.search()
+        self.dropdown_menu_1.items = [(row["Name"], row) for row in app_tables.types.search()]

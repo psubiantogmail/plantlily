@@ -21,7 +21,7 @@ class Data(DataTemplate):
     def button_add_click(self, **event_args):
         item = {}
         editing_form = DataEdit(item=item)
-        if alert(content=editing_form, large=True):
+        if alert(content=editing_form, large=False):
             anvil.server.call('add_data', item)
     
         #refresh the Data Grid

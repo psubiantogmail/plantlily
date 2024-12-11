@@ -33,8 +33,7 @@ components:
   name: text_4
   properties: {text: 'Plant type :'}
   type: form:dep_lin1x4oec0ytd:_Components.Text
-- data_bindings:
-  - {code: 'self.item['''']', property: items, writeback: false}
+- data_bindings: []
   layout_properties: {grid_position: 'HZDCXN,WUMXIZ'}
   name: dropdown_menu_1
   properties:
