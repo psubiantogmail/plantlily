@@ -8,5 +8,6 @@ import anvil.server
 
 @anvil.server.callable
 def add_data(data):
-  if data.get('name') and data.get('description') and data.get('added') and data.get('type'):
-      app_tables.plant.add_row(**data)
+    print(data)
+    if data.get('name') and data.get('description') and data.get('added') and data.get('type'):
+        app_tables.plants.add_row(**data)
