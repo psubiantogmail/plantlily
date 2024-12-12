@@ -22,10 +22,14 @@ components:
         type: form:dep_lin1x4oec0ytd:_Components.Heading
       - data_bindings:
         - {code: '''Acquired : '' + self.item[''added''].strftime("%m/%d/%Y")', property: text, writeback: false}
-        layout_properties: {col_xs: 6, row: HZXKZW, width_xs: 4}
+        layout_properties: {col_xs: 5, row: HZXKZW, width_xs: 4}
         name: heading_2
         properties: {scale: small}
         type: form:dep_lin1x4oec0ytd:_Components.Heading
+      - layout_properties: {col_xs: 9, row: HZXKZW, width_xs: 3}
+        name: button_edit
+        properties: {appearance: elevated, icon: 'mi:edit', text: Edit}
+        type: form:dep_lin1x4oec0ytd:_Components.Button
       - data_bindings:
         - {code: 'self.item[''description'']', property: text, writeback: false}
         layout_properties: {col_xs: 0, row: VLINTK, width_xs: 11}
