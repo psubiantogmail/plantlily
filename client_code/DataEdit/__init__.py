@@ -19,3 +19,6 @@ class DataEdit(DataEditTemplate):
 
         # Any code you write here will run before the form opens.
         self.dropdown_menu_1.items = [(row["Name"], row) for row in app_tables.types.search()]
+
+    def camera_upload_change(self, file, **event_args):
+        self.image_1.source = file
