@@ -22,5 +22,6 @@ class Data(DataTemplate):
         item = {}
         editing_form = DataEdit(item=item)
         if alert(content=editing_form, large=True):
+            print(item)
             anvil.server.call('add_data', item)
             self.repeating_panel.items = app_tables.plants.search()
